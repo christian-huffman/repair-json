@@ -61,6 +61,12 @@ function repairJson(input) {
 // '{"key1":"val1"'
 // '{"key1":"val1","key2":{"key3"'
 // '{"key1":"val1","key2":{"'
-const sample = '{"key1":"val1","key2":{"key3":"'
+
+// '{"a":{"b":{"c{{":"test"},"d{":"a"}}}}}' -> '{"a":{"b":{"c{{":"test"},"d{":"a"}}'
+// '{"a":{"b":{"c":"}}"}' -> '{"a":{"b":{"c":"}}"}}}'
+// '{"a":{"b":{"c":"}}"}' -> '{"a":{"b":{"c":"}}"}}}'
+// '{"key1":' -> '{"key1":"VALUE"}'
+// '{"a":{"b":{"c{{":"test"},"d{":"a"}' -> '{"a":{"b":{"c{{":"test"},"d{":"a"}}'
+const sample = '{"key1":"val1","key2":{"key3":"val3"},"key4"'
 console.log(repairJson(sample))
-console.log(JSON.parse(repairJson(sample)))
+// console.log(JSON.parse(repairJson(sample)))

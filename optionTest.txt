@@ -1,0 +1,109 @@
+1. What is the following a description of: A built-in React object that is used to contain data or information about the component?
+
+A. state
+B. component init() function
+C. propClass
+D. Redux class
+
+answer: A
+
+2. What optimization does useMemo help with?
+
+A. It helps to cache data fetched from Redux stores.
+B. It helps to avoid expensive calculation on every render.
+C. It helps cache data that was retrieved from a call to useEffect.
+
+answer: B
+
+
+3. What is the purpose of using fragments (<>...) in React?
+
+A. Fragments are used to enhance the security of React applications by encapsulating components and preventing external access to their internal state.
+B. Fragments allow you to group a list of children without adding extra nodes to the DOM, helping to keep the DOM tree clean and optimize performance.
+C. Fragments serve as placeholders for future components, allowing developers to dynamically inject components based on state or props without altering the DOM structure.
+D. Fragments provide a way to apply global CSS styles to a group of components without the need for a parent wrapper component.
+
+answer: B
+
+4. Which method is commonly used for conditional rendering in React?
+
+A. Using `switch` statement directly within the JSX to select which component to render.
+B. Employing a loop to iterate over components and render them only if they match a set of predefined conditions.
+C. Using the ternary operator(`condition ? true:false`) within the JSX to render components or elements based on a condition.
+D. Applying CSS classes to hide or show elements, thereby controlling their rendering on the page.
+
+correct: C
+
+
+5. What is the primary reason for using the useCallback hook in React?
+
+A. To asynchronously fetch data and update the component state when the data is received, minimizing the number of renders and improving the user experience.
+B. To memoize functions and prevent them from being recreated on every render, which can help in optimizing performance, especially with components  that rely on reference equality to prevent unnecessary re-renders.
+C. To directly manipulate the DOM elements within functional components, enabling smoother transitions and animations without re-rendering the component.
+D. To store state information in a global context, making it easily accessible across multiple components without having to prop drill.
+
+correct: B
+
+6. In React, what triggers a component to re-render?
+
+A. Components re-render every time the user interacts with the application, regardless of whether the state or props relevant to that component have changed.
+B. A re-render is triggered exclusively by changes in the global state of the application, such as context or Redux store updates, rather than changes in local state or props.
+C. A component re-renders when its state or props change, as React needs to call the component function again to get the updated JSX snapshot reflecting the new state or props.
+D. Re-rendering occurs only  when the parent component's state changes, requiring all child components to update their UI irrespective of their own state or props.
+
+correct: C
+
+7. What does the CSS property `box-sizing:border-box;` do?
+
+A. It excludes padding and border in the element's total width and height.
+B. It includes padding and border in the element's total width and height.
+C. It hides the border of the element.
+D. It hides the padding of the element.
+
+correct: B
+
+8. What does the CSS property `z-index;` do?
+
+A. It sets the stack order of an element.
+B. It sets the opacity of an element.
+C. It sets the horizontal alignment of an element.
+D. It sets the vertical alignment of an element.
+
+correct: A
+
+
+
+9. What does the `calc()` function do in CSS?
+
+A. It lets you perform calculations to determine CSS property values.
+B. It calculates the maximum value of a specific CSS propery.
+C. It calculates the average of CSS propery values.
+D. It calculates the sum of all CSS propery values.
+
+correct: A
+
+
+10. How do you define CSS variables?
+
+--variable-name: value;
+
+
+11. What does the `transform` property do in CSS?
+
+A. It applies a 2D or 3D transformation to an element.
+B. It changes the shape of an element.
+C. It changes the color of an element.
+D. It adds a border to an element.
+
+correct: A
+
+
+What was the last piece of software you worked on?
+What did you specifically build?
+
+The last piece of software I worked on was an e-commerce dashboard.
+I specifically built the product management interface using React.
+This included creating reusable components for product listings and details.
+I implemented a responsive design using Tailwind CSS for consistent styling across devices.
+I also developed a dynamic filtering system using JavaScript to sort and search products efficiently.
+Additionally, I integrated charts and graphs to visualize sales data, enhancing the user experience for store managers.
